@@ -1,0 +1,78 @@
+/* Start variables */
+:root{
+    --LightredCTAtext: hsl(356, 100%, 66%);
+    --Verylightredbackground : hsl(355, 100%, 74%); /*(CTA hoverbackground  )*/
+    --Verydarkblueheadings: hsl(208, 49%, 24%);
+    --Whitetext: hsl(0, 0%, 100%);
+    --Grayishbluefootertext: hsl(240, 2%, 79%);
+    --Verydarkgrayishbluebodycopy: hsl(207, 13%, 34%);
+    --Verydarkblackbluefooterbackground: hsl(240, 10%, 16%);
+    --section-padding:60px;
+    --sectionmargin:60px;
+    }
+    /* End variables */
+    /* Global ruls */
+    body{
+        font-family: 'Overpass', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    /* Small screen */
+    @media (min-width:768px){
+        .container{
+            width: 750px;
+        }
+    }
+    
+    /* medium screen */
+    @media (min-width:992px){
+        .container{
+            width: 970px;
+        }
+    }
+    
+    /* large screen */
+    @media (min-width:1200px){
+        .container{
+            width: 1170px;
+        }
+    }
+    /* end rules */
+    
+    /* strart Componant  */
+      .special-header{
+        font-size: 100px;
+        font-weight: 800;
+        letter-spacing: -3px;
+        color:rgb(211, 211, 211);
+        text-align: center;
+        margin: 0;
+    }
+      .special-header +p{
+        font-size: 19px;
+        color: #777;
+        margin: -30px 0 0;
+        text-align: center;
+    }
+    @media (min-width:768px){
+        Services  .special-header {
+            font-size: 60px;
+        }
+        Services  .special-header +p{
+            margin: -20px 0 0;
+        }
+    }
+    /* End Componant  */
+
+
+/* stayel Name  */
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
