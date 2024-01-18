@@ -19,7 +19,10 @@
     html{
         scroll-behavior: smooth;
     }
-    
+    *{
+        padding: 0;
+        margin: 0;
+    }
     .container{
         padding-left: 15px;
         padding-right: 15px;
@@ -74,5 +77,25 @@
 
 
 /* stayel Name  */
+footer{
+    background-color:var(--Verydarkblackbluefooterbackground);
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    gap: 30px;
+    padding: 20px;
+    height: 500px;
+    border-top-right-radius:100px ;
+    
+}
+footer  h4{
+    font-size: 18px;
+    color: var(--Whitetext);
+    margin-bottom: 20px;
+}
+footer  p{
+    font-size: 16px;
+    color: var(--Grayishbluefootertext);
+    margin: 10px;
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
