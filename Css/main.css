@@ -7,8 +7,10 @@
     --Grayishbluefootertext: hsl(240, 2%, 79%);
     --Verydarkgrayishbluebodycopy: hsl(207, 13%, 34%);
     --Verydarkblackbluefooterbackground: hsl(240, 10%, 16%);
+    --Verydarkgrayblue: hsl(237, 17%, 21%);
+    --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
     --section-padding:60px;
-    --sectionmargin:60px;
+    --section-margin:60px;
     }
     /* End variables */
     /* Global ruls */
@@ -66,26 +68,116 @@
         text-align: center;
     }
     @media (min-width:768px){
-        Services  .special-header {
-            font-size: 60px;
-        }
-        Services  .special-header +p{
-            margin: -20px 0 0;
-        }
+     
     }
     /* End Componant  */
+    h2{
+        text-align: center;
+        color: var(--Verydarkblueheadings);
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        font-family: 'Overpass', sans-serif;
+    }
+    .Section-3{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 330px;
+        background-color: var(--Verydarkdesaturatedblue);
+        margin-bottom: var(--section-margin);
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 50px;
+        background: linear-gradient(93deg, rgba(44, 45, 63, 1) 15%, rgba(63, 65, 100, 1) 48%);
+        
+    }
+    .Section-3 .image{
+        background-image: url('../images/bg-pattern-circles.svg');
+        background-size:350px;
+        background-position:left  ;
+        background-repeat: no-repeat;
+    }
+    .Section-3 img{
+        width: 500px;
+        
+}
+     .Section-3  .text h3{
+        color: var(--Whitetext);
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+       .Section-3  .text p{
+        width: 550px;
+        margin-top: var(--section-margin);
+        font-size: 20px;
+        color: var(--Grayishbluefootertext);
+        line-height: 2em;
+    }
+    @media (max-width:767px){
+        .Section-3{
+            flex-direction: column;
+            margin-top: var(--section-margin);
+            height: fit-content;
+        }
+        .Section-3 .text p{
+            width: 90%;
+            text-align: center;
+        }
+        .Section-3 .text h3{
+            text-align: center;
+        }
+     
+    }
 
-
-/* stayel Name  */
+    /* ___________Section 4 _____________$$ ____________ Section 2_______________________ */
+    .Section-4 ,.Section-2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Section-4{
+        padding-top: var(--section-padding);
+        margin-top:200px;
+    }
+    .Section-2 .image img{
+        width: 600px;
+    }
+    
+   
+     .iamge img{
+        width: 600px;
+        
+    }
+    
+    .text h3{
+        color: var(--Verydarkblueheadings);
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        font-family: 'Overpass', sans-serif;
+    }
+   .text p{
+        width: 500px;
+        margin-bottom: 40px;
+        line-height: 26px;
+        font-size: 16px;
+        color: var(--Verydarkgrayishbluebodycopy);
+    }
+/* stayel Footer  */
 footer{
+    margin-top: var(--section-margin);
     background-color:var(--Verydarkblackbluefooterbackground);
     display: grid;
     grid-template-columns:repeat(4,1fr) ;
     gap: 30px;
     padding: 20px;
-    height: 500px;
+    height: 300px;
     border-top-right-radius:100px ;
     
+}
+footer img{
+    margin-left: 30px;
 }
 footer  h4{
     font-size: 18px;
@@ -96,6 +188,45 @@ footer  p{
     font-size: 16px;
     color: var(--Grayishbluefootertext);
     margin: 10px;
+}
+@media (max-width:767px){
+        footer{
+            grid-template-columns: repeat(1,1fr);
+            height: fit-content;
+        }
+        .Section-2,.Section-4{
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            margin: 40px;
+        }
+       
+        .Section-4 .text h3{
+            font-size: 20px;
+            text-align: center;
+            margin-top: var(--section-margin);
+        }
+        .Section-4 .text p{
+            text-align: center;
+            width: fit-content;
+            margin: 10px 20px;
+        }
+        .Section-4 img{
+            width: 400px;
+            margin: 0;
+        }
+        .Section-2 .image img{
+            width: 300px;
+        }
+        .Section-2 h3{
+            font-size: 20px;
+            text-align: center;
+    }
+    .Section-2 p{
+        text-align: center;
+        width: fit-content;
+        margin: 10px 20px;
+    }
 }
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
